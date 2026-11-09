@@ -1,0 +1,208 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JUNAYET | Official</title>
+<style>
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 25px 15px;
+  font-family: Arial, sans-serif;
+  color: white;
+  background: linear-gradient(135deg, #080b1c, #25205a, #090919);
+}
+
+.card {
+  width: 100%;
+  max-width: 480px;
+  padding: 35px 22px;
+  text-align: center;
+  border: 1px solid #426c9b;
+  border-radius: 28px;
+  background: rgba(22, 25, 52, 0.88);
+  box-shadow: 0 0 35px #252b6644;
+}
+
+.tag {
+  display: inline-block;
+  padding: 12px 20px;
+  border: 1px solid #55eaff;
+  border-radius: 30px;
+  color: #65edff;
+  letter-spacing: 3px;
+  font-size: 12px;
+}
+
+.avatar {
+  width: 100px;
+  height: 100px;
+  margin: 30px auto 20px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  font-size: 48px;
+  font-weight: bold;
+  background: linear-gradient(135deg, #00d9ff, #7b2cff);
+  border: 3px solid #75f5ff;
+  box-shadow: 0 0 25px #00d9ff77;
+}
+
+h1 {
+  margin: 10px 0;
+  font-size: clamp(32px, 9vw, 46px);
+  letter-spacing: 3px;
+  color: #78efff;
+  text-shadow: 0 0 18px #00d9ff99;
+}
+
+.subtitle {
+  color: #c5baff;
+  letter-spacing: 4px;
+}
+
+.line {
+  width: 90px;
+  height: 4px;
+  margin: 25px auto;
+  border-radius: 5px;
+  background: linear-gradient(90deg, #00e5ff, #9b42ff);
+}
+
+.welcome {
+  line-height: 1.8;
+  color: #e0e3f4;
+}
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 9px;
+  margin: 28px 0;
+}
+
+.feature {
+  padding: 18px 5px;
+  border: 1px solid #353957;
+  border-radius: 15px;
+  background: #ffffff08;
+}
+
+.feature b {
+  display: block;
+  color: #64eaff;
+  font-size: 13px;
+}
+
+.feature small {
+  display: block;
+  margin-top: 8px;
+  color: #b7bdd1;
+  font-size: 10px;
+}
+
+button {
+  width: 100%;
+  padding: 17px 10px;
+  margin-top: 12px;
+  border-radius: 15px;
+  font-size: 15px;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+}
+
+.share {
+  border: none;
+  background: linear-gradient(100deg, #00a8c8, #7127e8);
+  box-shadow: 0 0 18px #4a57ff44;
+}
+
+.copy {
+  border: 1px solid #454967;
+  background: #ffffff08;
+}
+
+footer {
+  margin-top: 35px;
+  color: #a9afc8;
+  font-size: 12px;
+}
+</style>
+</head>
+<body>
+<main class="card">
+  <div class="tag">✦ OFFICIAL PROFILE ✦</div>
+
+  <div class="avatar">J</div>
+
+  <h1>JUNAYET</h1>
+  <div class="subtitle">GAMER · CREATOR</div>
+  <div class="line"></div>
+
+  <p class="welcome">
+    Welcome to my digital world.<br>
+    Stay unique. Stay legendary. ⚡
+  </p>
+
+  <div class="features">
+    <div class="feature">
+      <b>GAMING</b>
+      <small>MY WORLD</small>
+    </div>
+    <div class="feature">
+      <b>JUNAYET</b>
+      <small>MY IDENTITY</small>
+    </div>
+    <div class="feature">
+      <b>★★★</b>
+      <small>KEEP GOING</small>
+    </div>
+  </div>
+
+  <button class="share" onclick="sharePage()">
+    ↗ SHARE MY PAGE
+  </button>
+
+  <button class="copy" onclick="copyPage()">
+    ▣ COPY PAGE LINK
+  </button>
+
+  <footer>DESIGNED WITH ♥ BY JUNAYET</footer>
+</main>
+
+<script>
+async function sharePage() {
+  const data = {
+    title: "JUNAYET Official",
+    text: "Welcome to my digital world!",
+    url: location.href
+  };
+
+  if (navigator.share) {
+    try {
+      await navigator.share(data);
+    } catch (e) {}
+  } else {
+    copyPage();
+  }
+}
+
+async function copyPage() {
+  try {
+    await navigator.clipboard.writeText(location.href);
+    alert("Page link copied!");
+  } catch (e) {
+    prompt("Copy your page link:", location.href);
+  }
+}
+</script>
+</body>
+</html>
