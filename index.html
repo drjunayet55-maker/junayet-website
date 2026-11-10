@@ -1,94 +1,148 @@
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Free Fire UID Checker</title>
-<style>
-*{box-sizing:border-box}
-body{
-  margin:0;min-height:100vh;
-  font-family:Arial,sans-serif;
-  background:linear-gradient(145deg,#090d18,#17102c);
-  color:white;display:flex;justify-content:center;
-  padding:25px 15px
-}
-main{width:100%;max-width:440px}
-header{text-align:center;margin:30px 0}
-.logo{font-size:42px}
-h1{font-size:27px;color:#ffb52e;margin:12px 0}
-header p{color:#aeb7ce;font-size:14px}
-.card{
-  background:#151b2b;border:1px solid #343d54;
-  border-radius:18px;padding:22px;
-  box-shadow:0 10px 35px #0005
-}
-label{display:block;margin-bottom:10px;font-weight:bold}
-input{
-  width:100%;padding:15px;border-radius:10px;
-  border:1px solid #444f68;background:#0b1020;
-  color:white;font-size:16px;outline:none
-}
-button{
-  width:100%;margin-top:14px;padding:15px;
-  border:0;border-radius:10px;background:#ffb52e;
-  color:#17100a;font-size:16px;font-weight:bold;
-  cursor:pointer
-}
-#message{
-  margin-top:18px;padding:14px;border-radius:10px;
-  background:#0b1020;color:#c8d2e8;
-  line-height:1.6;font-size:14px
-}
-.info{margin-top:18px;color:#aeb7ce;font-size:12px;line-height:1.7}
-footer{text-align:center;color:#8b94aa;font-size:12px;margin:25px 0}
-</style>
-</head>
-<body>
-<main>
-<header>
-  <div class="logo">🎮</div>
-  <h1>Free Fire UID Checker</h1>
-  <p>Player Profile Lookup</p>
-</header>
-
-<section class="card">
-  <form id="checker">
-    <label for="uid">Enter Free Fire UID</label>
-    <input id="uid" type="text" inputmode="numeric"
-      placeholder="Enter player UID" required
-      pattern="[0-9]{5,20}" maxlength="20">
-    <button type="submit">CHECK UID</button>
-  </form>
-  <div id="message" role="status">
-    Enter a player UID to begin.
-  </div>
-  <div class="info">
-    Available profile details depend on the data source.
-    Account creation date, account age, avatar and banner
-    cannot be guaranteed.
-  </div>
-</section>
-
-<footer>Free Fire UID Checker · Community tool</footer>
-</main>
-
-<script>
-document.getElementById("checker").addEventListener("submit",function(e){
-  e.preventDefault();
-  const uid=document.getElementById("uid").value.trim();
-  const message=document.getElementById("message");
-
-  if(!/^[0-9]{5,20}$/.test(uid)){
-    message.textContent="Please enter a valid numeric UID.";
-    return;
+{
+  "region": "BD",
+  "data": {
+    "basicInfo": {
+      "accountId": "877998709",
+      "accountType": 1,
+      "nickname": "\uff28\uff35\uff2b\uff25\uff38\u3164\u1d2c\u1d41\u1d3f\u1d2c\u205f\uf8ff",
+      "region": "BD",
+      "level": 79,
+      "exp": 6345833,
+      "bannerId": 901000009,
+      "headPic": 902048021,
+      "rank": 317,
+      "rankingPoints": 2992,
+      "hasElitePass": true,
+      "badgeCnt": 26,
+      "badgeId": 1001000102,
+      "seasonId": 54,
+      "liked": 44584,
+      "lastLoginAt": "1794214602",
+      "csRank": 323,
+      "csRankingPoints": 160,
+      "weaponSkinShows": [
+        907104742,
+        912055002,
+        914051001
+      ],
+      "maxRank": 317,
+      "csMaxRank": 323,
+      "accountPrefers": {},
+      "createAt": "1554645612",
+      "title": 904090027,
+      "externalIconInfo": {
+        "status": "ExternalIconStatus_NOT_IN_USE",
+        "showType": "ExternalIconShowType_FRIEND"
+      },
+      "releaseVersion": "OB55",
+      "showBrRank": true,
+      "showCsRank": true,
+      "socialHighLightsWithBasicInfo": {},
+      "primeInfo": {
+        "primeLevel": 8
+      }
+    },
+    "profileInfo": {
+      "avatarId": 101000006,
+      "skinColor": 50,
+      "clothes": [
+        211001111,
+        205050025,
+        211046051,
+        203046024,
+        214050005,
+        204045003
+      ],
+      "equipedSkills": [
+        16,
+        7406,
+        8,
+        1,
+        8,
+        2,
+        16,
+        3506,
+        8,
+        3,
+        16,
+        2906
+      ],
+      "isSelected": true,
+      "isSelectedAwaken": true,
+      "isMarkedStar": true
+    },
+    "clanBasicInfo": {
+      "clanId": "3105893870",
+      "clanName": "CA\u019d\u018a\u01b3\u3164C\u012c\u01ac\u01b3",
+      "captainId": "877998709",
+      "clanLevel": 6,
+      "capacity": 55,
+      "memberNum": 47
+    },
+    "captainBasicInfo": {
+      "accountId": "877998709",
+      "accountType": 1,
+      "nickname": "\uff28\uff35\uff2b\uff25\uff38\u3164\u1d2c\u1d41\u1d3f\u1d2c\u205f\uf8ff",
+      "region": "BD",
+      "level": 79,
+      "exp": 6345833,
+      "bannerId": 901000009,
+      "headPic": 902048021,
+      "rank": 317,
+      "rankingPoints": 2992,
+      "hasElitePass": true,
+      "badgeCnt": 26,
+      "badgeId": 1001000102,
+      "seasonId": 54,
+      "liked": 44584,
+      "lastLoginAt": "1794214602",
+      "csRank": 323,
+      "csRankingPoints": 160,
+      "weaponSkinShows": [
+        907104742,
+        912055002,
+        914051001
+      ],
+      "maxRank": 317,
+      "csMaxRank": 323,
+      "accountPrefers": {},
+      "createAt": "1554645612",
+      "title": 904090027,
+      "externalIconInfo": {
+        "status": "ExternalIconStatus_NOT_IN_USE",
+        "showType": "ExternalIconShowType_FRIEND"
+      },
+      "releaseVersion": "OB55",
+      "showBrRank": true,
+      "showCsRank": true,
+      "socialHighLightsWithBasicInfo": {},
+      "primeInfo": {
+        "primeLevel": 8
+      }
+    },
+    "petInfo": {
+      "id": 1300000001,
+      "name": "EMONBAHI",
+      "level": 6,
+      "exp": 3041,
+      "isSelected": true,
+      "skinId": 1310000003,
+      "selectedSkillId": 1315000010
+    },
+    "socialInfo": {
+      "accountId": "877998709",
+      "gender": "Gender_MALE",
+      "language": "Language_ARABIC",
+      "signature": "[b][C]\u0995\u09ae \u099f\u09be\u0995\u09be\u09df TopUp \u0995\u09b0\u09a4\u09c7 \u09ad\u09bf\u099c\u09bf\u099f \n\nREALTOPUP\u2022COM",
+      "rankShow": "RankShow_BR"
+    },
+    "diamondCostRes": {
+      "diamondCost": 390
+    },
+    "creditScoreInfo": {
+      "creditScore": 100,
+      "rewardState": "REWARD_STATE_UNCLAIMED",
+      "periodicSummaryEndTime": "1794235714"
+    }
   }
-
-  message.textContent="UID: "+uid+
-    " — The lookup service is not connected yet. "+
-    "Connect a working API to retrieve the real player profile.";
-});
-</script>
-</body>
-</html>
+}
